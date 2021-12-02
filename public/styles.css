@@ -32264,6 +32264,8 @@ video {
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgba(248, 113, 113, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
   padding: 1rem;
 }
 
@@ -32298,6 +32300,7 @@ video {
 .carousel-indicator{
   height: 0.75rem;
   width: 0.75rem;
+  cursor: pointer;
   border-radius: 9999px;
   border-width: 0px;
   background: rgba(0,0,0,0.3);
@@ -32306,6 +32309,23 @@ video {
 .current_slide{
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+}
+
+.carousel_track{
+  position: relative;
+  height: 100%;
+  transition: transform 300ms ease-in;
+}
+
+.carousel_track-container{
+  position: relative;
+  margin-top: 0.5rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.is-hidden{
+  display: none;
 }
 
 @media (min-width: 640px) {

@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="carousel relative w-4/5 my-0 mx-auto">
-        <button class="carousel_button carousel_button--left">
+        <button class="carousel_button carousel_button--left is-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
         </button>
-        <div class="carousel_track-container mt-2 h-full relative">
+        <div class="carousel_track-container">
             <ul class="carousel_track">
-                <li class="carousel_slide">
+                <li class="carousel_slide current-slide">
                     <img class="carousel-img" src="/images/image01.jpg" alt="">
                 </li>
                 <li class="carousel_slide">
@@ -39,5 +39,7 @@
             <button class="carousel-indicator"></button>
         </div>
     </div>
+
+    <script src="/public/index.js"></script>
 </body>
 </html>
